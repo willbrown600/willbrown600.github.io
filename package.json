@@ -1,0 +1,24 @@
+{
+  "name": "Web_Development",
+  "version": "1.0.0",
+  "description": "This is a repository is about focusing on Advanced JavaScript, HTML and CSS projects from my BYU-Idaho Paper WDD330.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willbrown600/Web_Development.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willbrown600/Web_Development/issues"
+  },
+  "homepage": "https://willbrown600.github.io/Web_Development",
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
