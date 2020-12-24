@@ -37,7 +37,7 @@ function startGame() {
   timeUp = false;
   score = 0;
   peep();
-  setTimeout(() => timeUp = true, 10000)
+  setTimeout(() => timeUp = true, 15000)
 }
 
 function bonk(e) {
