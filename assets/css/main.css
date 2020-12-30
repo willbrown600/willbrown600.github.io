@@ -68,6 +68,29 @@ input, select, textarea {
 	appearance: none;
 }
 
+
+.post-skills{
+	
+	display: flex;
+	padding: 10px;
+}
+
+.skills-list{
+	display: block;
+	list-style: none;
+	text-align: center;
+	font-family: devicons;
+    overflow-block:inherit;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 3;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
 /* Basic */
 
 	@-ms-viewport {
@@ -3759,6 +3782,7 @@ input, select, textarea {
 		max-width: 72rem;
 		z-index: 2;
 	}
+
 
 		#main > * {
 			padding: 4rem 4rem 2rem 4rem ;

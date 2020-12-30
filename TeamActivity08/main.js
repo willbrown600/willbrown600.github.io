@@ -1,64 +1,224 @@
-const Url = 'https://swapi.dev/api/people/';
-const people = document.querySelectorAll('.people').value;
+const filmRequest = 'https://swapi.dev/api/films/';
+const peopleRequest = 'https://swapi.dev/api/people/';
+const planetRequest = 'https://swapi.dev/api/planets/';
+const speciesRequest = 'https://swapi.dev/api/species/';
+const starshipRequest = 'https://swapi.dev/api/starships/';
+const vehiclesRequest = 'https://swapi.dev/api/vehicles/';
 
+
+
+const films = document.getElementsByClassName('sbs1');
+//console.log(films)
+const button = document.querySelectorAll("button");
+console.log(button);
 
 //const input = 'people'//document.querySelectorAll('input').value;
 
 let StarData = [];
 //let data;
 
+async function getfilms(filmRequest) {
+  try {
+    const response = await fetch(filmRequest);
+    if (!response.ok) {
+      throw Error(response.statusText);
+    } 
+    else 
+    {
+      const fetchJson = await response.json();
+      console.log(fetchJson);
+      return fetchJson;
+    }
+  } 
+  catch (error) 
+  {
+    console.log(error);
+  }
+  
+}
+
+//get people 
+
+async function getPeople(peopleRequest) {
+  try {
+    const response = await fetch(peopleRequest);
+    if (!response.ok) {
+      throw Error(response.statusText);
+    } 
+    else 
+    {
+      const fetchJson = await response.json();
+      console.log(fetchJson);
+      return fetchJson;
+    }
+  } 
+  catch (error) 
+  {
+    console.log(error);
+  }
+  
+}
+
+//get Planets
+
+async function getPlanets(planetRequest) {
+  try {
+    const response = await fetch(planetRequest);
+    if (!response.ok) {
+      throw Error(response.statusText);
+    } 
+    else 
+    {
+      const fetchJson = await response.json();
+      console.log(fetchJson);
+      return fetchJson;
+    }
+  } 
+  catch (error) 
+  {
+    console.log(error);
+  }
+  
+}
+
+//get Species
+
+async function getSpecies(speciesRequest) {
+  try {
+    const response = await fetch(speciesRequest);
+    if (!response.ok) {
+      throw Error(response.statusText);
+    } 
+    else 
+    {
+      const fetchJson = await response.json();
+      console.log(fetchJson);
+      return fetchJson;
+    }
+  } 
+  catch (error) 
+  {
+    console.log(error);
+  }
+  
+}
 
 
-fetch(Url)
+//get Starships
 
-    .then(res => res.json())
-    .then(res => StarData.push(res))
-    
-    console.log(StarData)
+async function getStarships(starshipRequest) {
+  try {
+    const response = await fetch(starshipRequest);
+    if (!response.ok) {
+      throw Error(response.statusText);
+    } 
+    else 
+    {
+      const fetchJson = await response.json();
+      console.log(fetchJson);
+      return fetchJson;
+    }
+  } 
+  catch (error) 
+  {
+    console.log(error);
+  }
+  
+}
 
-    //.catch(error => console.log('Error'))
+//get Vehicles
 
-/*console.log(SWdata);
 
-function findMatches(wordToMatch, cities){
-    return cities.filter(place => {
+async function getVehicles(vehiclesRequest) {
+  try {
+    const response = await fetch(vehiclesRequest);
+    if (!response.ok) {
+      throw Error(response.statusText);
+    } 
+    else 
+    {
+      const fetchJson = await response.json();
+      console.log(fetchJson);
+      return fetchJson;
+    }
+  } 
+  catch (error) 
+  {
+    console.log(error);
+  }
+  
+}
 
-        const regex = new RegExp(wordToMatch, 'gi');
 
-        return place.city.match(regex) || place.state.match(regex)
+//  View code
+function renderShipList(ships, shipListElement) {
+  // I decided to use a table to display my list of ships. The shipList Element is that table and it has 2 children: thead and tbody...we need to put our ships into tbody...so I reference the second child.
+  const list = shipListElement.children[1];
+  list.innerHTML = "";
+  //loop through the ships
+  ships.forEach(function (ship) {
+    console.log(ship);
+    //create elements for list...tr
+    let listItem = document.createElement("tr");
+    listItem.innerHTML = `
+        <td><a href="${ship.url}">${ship.name}</a></td>
+        <td>${ship.length}</td>
+        <td>${ship.crew}</td>
+        `;
+
+    listItem.addEventListener("click", function (event) {
+      //when clicked the default link behavior should be stopped, and the ship details function should be called...passing the value of the href attribute in
+      event.preventDefault();
+      getShipDetails(ship.url);
     });
+
+    //add the list item to the list
+    list.appendChild(listItem);
+  });
+}
+// need to write the code to render the details to HTML
+function renderShipDetails(shipData) {
+  console.log(shipData);
 }
 
-function numberWithCommas(x){
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-}
 
-function display(){
-    const matchArray = findMatches(this.value, cities);
-    console.log(matchArray);
+/*async function fetchURL(request){
+	
+  const response = await fetch(request);
+  console.log(response)
+	const data = await response.json();
+  console.log(data.json);*/
+  
+  
+  
+/*async function fetchURL() {
+    let response = await fetch('/schema/', {
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+        },
+        method: 'GET',
+    });
+    // you can check for response.ok here, and literally just throw an error if you want
+    await response.json();
+    console.log(response)*/
 
-    const html = matchArray.map(place => {
-    const regex = new RegExp(this.value, 'gi');
-    const cityName = place.city.replace(regex, `<span class="hl">${this.value}</span>`); 
-    const stateName = place.state.replace(regex, `<span class="hl">${this.value}</span>`);    
-        return`
-        <li>
-            <span class="name">${cityName}, ${stateName}</span>
-            <span class="population">${numberWithCommas(place.population)}</span>
-        </li>
+	
 
-    `;
 
-    }).join('');
+getfilms(filmRequest);
+getPeople(peopleRequest);
+getSpecies(speciesRequest);
+getStarships(starshipRequest);
+getPlanets(planetRequest);
+getVehicles(vehiclesRequest);
 
-    suggestions.innerHTML = html;
-    
-}
+renderShipList()
 
-const searchInput = document.querySelector('.search');
-const suggestions = document.querySelector('.suggestions');
 
-searchInput.addEventListener('change', display);*/
+//button.addEventListener('click', fetchURL);
+
+
 /*
 //helper function to fetch the data from an external source and return it in JSON format
 function getJSON(url) {
@@ -108,7 +268,8 @@ function renderShipList(ships, shipListElement) {
 function renderShipDetails(shipData) {
   console.log(shipData);
 }
-
+*/
+/*
 // controller code
 function showShips(url = "https://swapi.dev/api/starships/") {
   getShips(url).then(function (data) {
