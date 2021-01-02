@@ -69,10 +69,31 @@ input, select, textarea {
 }
 
 
-.post-skills{
+section.skills-list{
 	
-	display: flex;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
 	padding: 10px;
+	
+}
+p.skill{
+	text-justify: center;
+	text-align: center;
+}
+
+header.minor a#skills, a#projects, a#education, a#about_me, a#contact_me, img, p, h4{
+
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+}
+
+article.post_minor img{
+
+	justify-items: center;
+
 }
 
 .skills-list{
@@ -198,12 +219,27 @@ input, select, textarea {
 }
 
 a.button {
-    background: black;
+    background: rgb(160, 169, 172);
     display: block;
     padding: 10px;
-    color: white;
-    margin-bottom: 10px;
+    color: rgb(56, 63, 70);
+	margin-bottom: 10px;
+	text-align: center;
+	justify-content: center;
 }
+/* Project posts*/
+
+section.posts img{
+
+	width: 50%;
+	height: 100px;
+
+}
+	
+
+
+
+
 
 /* Matches Twitter, TWITTER, twitter, tWitter, TWiTTeR... */
 .button[href*=twitter] {
