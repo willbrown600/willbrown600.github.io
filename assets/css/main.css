@@ -82,7 +82,7 @@ p.skill{
 	text-align: center;
 }
 
-header.minor a#skills, a#projects, a#education, a#about_me, a#contact_me, img, p, h4{
+header.minor a#skills, a#projects, a#education, a#about_me, a#contact_me, a#education img, p, h4{
 
 	display: flex;
 	justify-content: center;
@@ -108,7 +108,8 @@ article.post_minor img{
     text-transform: none;
     line-height: 3;
     -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 .image_main{
 	justify-content: center;
@@ -224,7 +225,7 @@ a.button {
     padding: 10px;
     color: rgb(56, 63, 70);
 	margin-bottom: 10px;
-	text-align: center;
+	align-content: center;
 	justify-content: center;
 }
 /* Project posts*/
