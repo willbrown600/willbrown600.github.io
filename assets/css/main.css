@@ -96,6 +96,10 @@ article.post_minor img{
 
 }
 
+.elinks{
+	color:lightseagreen;
+}
+
 .skills-list{
 	display: block;
 	list-style: none;
@@ -130,6 +134,9 @@ article.post_minor img{
 	text-align: center;
 }
 
+.bg fixed img{
+	align-self: center;
+}
 
 
 .cool>li {
