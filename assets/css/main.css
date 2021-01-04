@@ -100,6 +100,10 @@ article.post_minor img{
 	color:lightseagreen;
 }
 
+.post-skills{
+
+}
+
 .skills-list{
 	display: block;
 	list-style: none;
@@ -4144,7 +4148,7 @@ section.posts img{
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: block;
 		background-color: #f5f5f5;
 		color: #909498;
 		cursor: default;
