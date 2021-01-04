@@ -100,8 +100,29 @@ article.post_minor img{
 	color:lightseagreen;
 }
 
-.post-skills{
 
+
+.Aminor{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	align-content: center;
+	justify-content: center;
+
+}
+
+.Aminor h2, p{
+	grid-column: 2;
+}
+
+.Aminor img{
+	grid-column: 1;
+	
+	
+}
+
+Article img{
+	align-self: center;
+	justify-self: center;
 }
 
 .skills-list{
