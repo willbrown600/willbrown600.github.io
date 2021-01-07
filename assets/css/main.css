@@ -177,6 +177,10 @@ Article img{
 	align-self: center;
 }
 
+.post_Bminor{
+	text-decoration: none;
+}
+
 .post_Bminor img{
 	width: 35%;
 	margin-left: 425px;
