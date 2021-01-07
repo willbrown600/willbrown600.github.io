@@ -158,20 +158,74 @@ Article img{
 	justify-content: center;
 	align-content: center;
 }
-/* DropDown Projects List */
 
-.cool>li>a {
-    color: rgb(41, 41, 30);
-    text-decoration: none;
-    font-size: 20px;
-    background: rgba(240, 64, 64, 0.2);
-    padding: 10px 20px;
-    display: inline-block;
-    margin: 20px;
-	border-radius: 5px;
-	width: 80%;
-	text-align: center;
+@media screen and (max-width: 480px) {
+	
+	.Aminor{
+		
+		display: block;
+		
+	}
+	
+	.Aminor h2 a{
+		margin-top: -20px;
+	}
+	
+	.Aminor p{
+		margin-top: -40px;
+		padding: 3px;
+		line-height: 1.5em; 
+		
+	}
+	
+	
+	.Aminor img{
+		padding: 0% 20% 7% 10%;
+		
+	}
+	
+	/************Education*************/
+	
+	.minor{
+		line-height: 1.5em
+	}
+
+	/*****************Skills******************/
+	
+	section.skills-list{
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		margin: 0% 0% 0%;
+		
+		justify-items: center;
+		align-items: center;
+	}
+	li.skills-list i, p{
+		
+		display: block;
+		align-content: center;
+		justify-self: center;
+		
+	}
+	
+	li.skills-list p.skill{
+		line-height: 1em;
+	}
+	
+	.post_Cminor img{
+	width: 35%;
+	margin-left: -10%;
+	}
+
 }
+	
+
+	
+
+
+
+
 
 .bg fixed img{
 	align-self: center;
