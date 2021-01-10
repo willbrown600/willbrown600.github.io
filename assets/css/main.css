@@ -96,6 +96,12 @@ article.post_minor img{
 
 }
 
+.post_featured img{
+	display: flex;
+	width:70%;
+	margin: 0 auto;
+}
+
 .elinks{
 	color:lightseagreen;
 }
