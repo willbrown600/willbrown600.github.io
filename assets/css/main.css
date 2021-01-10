@@ -138,6 +138,7 @@ article.post_minor img{
 	width: 300px;
 	
 	
+	
 }
 
 Article img{
@@ -165,29 +166,34 @@ Article img{
 	align-content: center;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 380px) {
 	
-	.Aminor{
-		
-		display: block;
-		
+	.post_Dminor{
+		margin: 0px auto;
 	}
 	
-	.Aminor h2 a{
-		margin-top: -20px;
+	.Aminor{
+		display: block;
+		height: auto;
+	}
+	
+	.Aminor h2 a{	
+		align-self: center;
 	}
 	
 	.Aminor p{
-		margin-top: -40px;
-		padding: 3px;
+		margin: 0 auto;
 		line-height: 1.5em; 
-		
 	}
 	
-	
-	.Aminor img{
-		padding: 0% 20% 7% 10%;
+	.post_Dminor img{
 		
+		width: 100%;
+		padding: 20% 20%;
+	}
+
+	.post_featured img{
+		padding: 2% 0% 10%;
 	}
 	
 	/************Education*************/
@@ -220,18 +226,13 @@ Article img{
 	}
 	
 	.post_Cminor img{
-	width: 35%;
-	margin-left: -10%;
+		width: 40%;
+		margin: 0px auto;
+		margin-left: 30%;
 	}
 
 }
 	
-
-	
-
-
-
-
 
 .bg fixed img{
 	align-self: center;
@@ -247,8 +248,9 @@ Article img{
 }
 
 .post_Cminor img{
-	width: 35%;
-	margin-left: 425px;
+	width: 40%;
+	margin: 0px auto;
+	margin-left: 30%;
 }
 
 .arrow {
@@ -309,6 +311,10 @@ section.posts img{
 	width: 50%;
 	height: 100px;
 
+}
+
+#footer{
+	padding: 10%;
 }
 	
 
