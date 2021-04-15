@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Oldenburg&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow: hidden;
+  background-color: #300;
+  font-size: 0.8em;
+}
+
+p {
+  line-height: 1.1;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oldenburg", cursive;
+  font-size: 1.3rem;
+}
+
+#zen-intro {
+  padding-top: 120px;
+}
+
+header {
+  color: white;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  font-size: 1.2rem;
+}
+
+.page-wrapper {
+  width: 100vh;
+  height: 100vw;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transform-origin: right top;
+  transform: rotate(-90deg) translate3d(0, -100vh, 0);
+}
+
+#zen-intro,
+#zen-supporting {
+  background: repeat-y top right url(https://jsuddsjr.github.io/files/Wallpaper90.png);
+}
+#zen-intro > div p,
+#zen-supporting > div p {
+  transform-origin: left top;
+  transform: rotate(90deg) translate3d(-60px, calc(-100vh + 40px), 0);
+  background-color: #e9d2b7;
+  margin-bottom: 40vh;
+  max-width: 50vh;
+  border: solid 4vmin #2d1d29;
+  border-bottom-color: #4c3145;
+  border-top-color: #0e090d;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.45) inset, 0 5px 10px 5px rgba(0, 0, 0, 0.65);
+  display: inline-block;
+  padding: 4vmin;
+  position: relative;
+  text-align: center;
+  border-image: url("//s3-us-west-2.amazonaws.com/s.cdpn.io/4273/frame.png") 93 92 87 92 stretch stretch;
+  /* "Random" pictures are hung at different locations */
+}
+#zen-intro > div p:nth-of-type(2n + 1),
+#zen-supporting > div p:nth-of-type(2n + 1) {
+  transform: rotate(90deg) translate3d(-20px, calc(-100vh + 80px), 0);
+}
+#zen-intro > div p:nth-child(3n),
+#zen-supporting > div p:nth-child(3n) {
+  transform: rotate(90deg) translate3d(60px, calc(-100vh + 140px), 0);
+}
+
+#zen-supporting .participation {
+  min-width: 25vh;
+}
+#zen-supporting .requirements {
+  min-width: 75vh;
+}
+#zen-supporting .benefits {
+  min-width: 10vh;
+}
+
+/*********************Navigation****************************/
+aside {
+  width: 100%;
+  height: auto;
+  border: 1px solid transparent;
+  color: white;
+  background: repeat-y top right url(https://jsuddsjr.github.io/files/Wallpaper90.png);
+}
+
+#design-selection h3 {
+  width: 250px;
+  margin-left: 750px;
+  margin-top: 100px;
+  padding: 15px;
+  transform: rotate(90deg);
+}
+
+#design-selection nav ul {
+  transform: rotate(90deg);
+  width: 250px;
+  margin-left: 600px;
+  margin-top: -120px;
+  list-style: none;
+}
+#design-selection nav ul li {
+  padding: 3px;
+}
+#design-selection nav ul li a {
+  color: white;
+  font-size: 16px;
+  line-height: 1.4em;
+  text-decoration: none;
+}
+#design-selection nav ul li a:hover {
+  color: red;
+}
+#design-selection nav ul li a:active {
+  color: purple;
+}
+
+/**********Archives***************/
+#design-archives h3 {
+  width: 250px;
+  transform: rotate(90deg);
+  margin-left: 430px;
+  margin-top: -160px;
+}
+
+#design-archives nav ul {
+  width: 250px;
+  transform: rotate(90deg);
+  padding: 10px;
+  margin-left: 380px;
+  margin-top: -30px;
+}
+#design-archives nav ul li {
+  list-style: none;
+}
+#design-archives nav ul li a {
+  text-decoration: none;
+  color: white;
+  line-height: 1.6em;
+  font-size: 16px;
+}
+#design-archives nav ul li a:hover {
+  color: red;
+}
+
+/***********Resources****************/
+#zen-resources h3 {
+  width: 250px;
+  transform: rotate(90deg);
+  margin-left: 650px;
+  margin-top: 300px;
+}
+
+#zen-resources ul {
+  width: 250px;
+  transform: rotate(90deg);
+  padding: 10px;
+  margin-left: 560px;
+  margin-top: -80px;
+}
+#zen-resources ul li {
+  list-style: none;
+}
+#zen-resources ul li a {
+  text-decoration: none;
+  color: white;
+  line-height: 1.6em;
+  font-size: 16px;
+}
+#zen-resources ul li a:hover {
+  color: red;
+}
+
+@media screen and (max-height: 550px) {
+  body {
+    font-size: 0.7em;
+  }
+
+  #zen-intro > div,
+#zen-supporting > div {
+    min-width: 70vh;
+  }
+}
+@media screen and (max-height: 450px) {
+  body {
+    font-size: 0.65em;
+  }
+}
