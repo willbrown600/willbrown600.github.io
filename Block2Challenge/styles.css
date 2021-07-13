@@ -41,8 +41,7 @@ h2 {
 
 p.hiddenTranslation::before,
 p.hiddenDefinition::before {
-    content: "";
-    display: none;
+    visibility: hidden;
 }
 
 p.hiddenTranslation::after {
@@ -92,14 +91,17 @@ input {
 }
 
 div#word {
-    content: counter(',');
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 0.3rem;
+    color: black;
+    font-weight: bold;
 }
 
 div#definition {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.5);
     padding: 0.3rem;
+    color: black;
+    font-weight: bold;
 }
 
 button {
@@ -107,20 +109,20 @@ button {
     margin-top: 10px;
     height: 50px;
     width: 80%;
-    border: rgba(122, 30, 30, 0.12);
     border-width: 10px;
     border: solid 5px black;
+    background-color: lightblue;
 }
 
 @media screen and (min-width: 400px) {
     html {
         background-image: url('./background2.jpg');
     }
-    .wrapper {
-        margin: 0 auto;
-        width: 80%;
-    }
-    h2 {
-        margin: 0 auto;
+    .wrapper,
+    h2,
+    button,
+    legend,
+    input {
+        width: 50%;
     }
 }
