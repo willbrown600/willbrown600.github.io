@@ -1,7 +1,7 @@
 {
   "name": "Web_Development",
   "version": "1.0.0",
-  "description": "This is a repository is about focusing on Advanced JavaScript, HTML and CSS projects from my BYU-Idaho Paper WDD330.",
+  "description": "This is a repository is about focusing on some projects I got up too.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
