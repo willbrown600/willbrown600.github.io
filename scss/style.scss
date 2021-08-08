@@ -1,62 +1,7 @@
 /**************About Me*************/
 
-.post_Dminor {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.post_Dminor img {
-    grid-column: span1;
-    width: 100%;
-    padding: 7% 30%;
-}
-
-.Aminor {
-    grid-column: span2;
-}
-
-.Aminor h2 a {
-    align-items: right;
-    justify-content: right;
-    margin: 0 auto;
-}
-
-.Aminor p {
-    margin: 0 auto;
-}
-
 
 /*****************/
-
-.post-skills {
-    height: auto;
-}
-
-Article img {
-    align-self: center;
-    justify-self: center;
-}
-
-.skills-list {
-    display: block;
-    list-style: none;
-    text-align: center;
-    font-family: devicons;
-    overflow-block: inherit;
-    font-style: normal;
-    font-weight: 400;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 3;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
-}
-
-.image_main {
-    justify-content: center;
-    align-content: center;
-}
 
 
 /*********************Responsive*************/
@@ -114,77 +59,6 @@ Article img {
         margin: 0px auto;
         margin-left: 30%;
     }
-}
-
-.bg fixed img {
-    align-self: center;
-}
-
-.post_Bminor {
-    text-decoration: none;
-}
-
-.post_Bminor img {
-    width: 100%;
-    padding: 5% 20%;
-}
-
-.post_Cminor img {
-    width: 40%;
-    margin: 0px auto;
-    margin-left: 30%;
-}
-
-.arrow {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    display: block;
-    background: rgb(100, 110, 252);
-    transform: translateY(-50%) rotate(45deg);
-}
-
-.bio {
-    min-width: 500px;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    line-height: 1.7;
-}
-
-.bio img {
-    float: left;
-    margin-right: 20px;
-    max-width: 50px;
-}
-
-.projects img {
-    max-width: 50px;
-}
-
-.courses {
-    min-width: 300px;
-}
-
-.courses li {
-    padding: 10px 0;
-    display: block;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.dropdown a {
-    text-decoration: none;
-    color: #d14014;
-}
-
-a.button {
-    background: rgb(160, 169, 172);
-    display: block;
-    padding: 10px;
-    color: rgb(56, 63, 70);
-    margin-bottom: 10px;
-    align-content: center;
-    justify-content: center;
 }
 
 
